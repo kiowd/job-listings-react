@@ -1,0 +1,76 @@
+.pg-3 {
+  margin-top: 65px;
+}
+.ro {
+  background-color: white;
+  box-shadow: 10px 10px 5px 0px rgba(209, 207, 209, 1);
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.img {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.position {
+  font-weight: 700;
+}
+.location {
+  color: hsl(180, 8%, 52%);
+}
+
+.company {
+  color: teal;
+}
+
+hr {
+  display: none;
+}
+.skill,
+.new,
+.featured {
+  margin: 3px;
+  background-color: hsl(180, 52%, 96%);
+  border: none;
+  border-radius: 5px;
+  color: hsl(180, 29%, 50%);
+}
+
+.new,
+.featured {
+  color: white;
+  background-color: hsl(180, 29%, 50%);
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.featured {
+  background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 13px;
+  }
+  .img {
+    margin-top: -45px;
+    margin-right: 130px;
+    width: 110px;
+  }
+  .ro {
+    margin-bottom: 45px;
+  }
+  .post {
+    margin-top: 10px;
+  }
+
+  hr {
+    display: block;
+    border-top: 0.5px solid black;
+  }
+
+  .skill {
+    font-size: 10px;
+  }
+}
