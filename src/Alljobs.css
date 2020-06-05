@@ -1,11 +1,21 @@
 .pg-3 {
   margin-top: 65px;
 }
-.ro {
+.ro,
+.filter-container {
   background-color: white;
   box-shadow: 10px 10px 5px 0px rgba(209, 207, 209, 1);
   margin-top: 10px;
   padding: 15px;
+}
+
+.filter-container {
+  position: relative;
+  margin-top: -100px;
+  margin-bottom: 30px;
+}
+.filter {
+  padding: 25px;
 }
 
 .img {
@@ -37,6 +47,22 @@ hr {
   color: hsl(180, 29%, 50%);
 }
 
+.skill {
+  padding: 4px;
+}
+
+.borderLeft {
+  border-left: 3px solid hsl(180, 29%, 50%);
+}
+
+.cross {
+  color: white;
+  background-color: hsl(180, 29%, 50%);
+  padding: 3px 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
 .new,
 .featured {
   color: white;
@@ -49,17 +75,31 @@ hr {
   background-color: black;
 }
 
+.skill:hover {
+  color: white;
+  background-color: hsl(180, 29%, 50%);
+}
+
+button:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 600px) {
   * {
     font-size: 13px;
   }
+
+  .filter-container {
+    margin-top: -80px;
+    margin-bottom: 55px;
+  }
   .img {
-    margin-top: -45px;
+    margin-top: -65px;
     margin-right: 130px;
     width: 110px;
   }
   .ro {
-    margin-bottom: 45px;
+    margin-bottom: 55px;
   }
   .post {
     margin-top: 10px;
@@ -71,6 +111,6 @@ hr {
   }
 
   .skill {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
